@@ -1,0 +1,16 @@
+{
+  "name": "Shopify GraphQL Schema",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Admin 2020-01": {
+        "url": "https://${env:SHOPIFY_STORE_NAME}.myshopify.com/admin/api/2020-01/graphql.json",
+        "headers": {
+          "user-agent": "JS GraphQL",
+          "X-Shopify-Access-Token": "${env:SHOPIFY_ACCESS_TOKEN}"
+        },
+        "introspect": false
+      }
+    }
+  }
+}
